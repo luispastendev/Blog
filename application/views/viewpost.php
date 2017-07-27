@@ -25,7 +25,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active-propio"><a href="#">Inicio<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Inicio<span class="sr-only">(current)</span></a></li>
         <li class="corriente"><a href="#">Noticias</a></li>
        
       </ul>
@@ -34,43 +34,17 @@
   </div><!-- /.container-fluid -->
 </nav>
 <div class="contenedor-secundario">
-<br>
-
-<div class="list-group">
-<center><h2>Publicaciones</h2></center>
-
-
-<?php 
-$i = 0;
-  foreach($consulta->result() as $fila){
-    $i++;
-    if($i<5):
- ?>
-
-  <a href="<?=base_url().'Viewpost?id='.$fila->id?>" class="list-group-item">
-    <h4 class="list-group-item-heading"><?=$fila->title;?></h4>
-    <p class="list-group-item-text"><?
-    $letras=50; 
-    if(strlen($fila->texto)>=$letras):
-       echo substr($fila->texto,0,$letras)."<h3 style='font-weight: 700'>…</h3>"."<p style='font-weight: 700!important;'>Para seguir leyendo debes presionar sobre el post</p>";
-    else:
-      echo $fila->texto;
-    endif;
-    ?></p>
-   <p class="date">Fecha de publicacion : <?=$fila->date;?></p>
-   <p class="date">Autor: <?=$fila->author;?></p>
-  </a>
-  <?
-    else:
-    break;
-    endif;
-}
-  ?>
-  <br>
-<center><a href="<?=base_url();?>Allposts"><h3>Ver todos los posts</h3></a></center><br>
+<div class="post">
+  <h3><?=$consulta->title;?></h3>
+  <p><?=$consulta->texto;?></p><br>
+  <a href="#">Autor: <?=$consulta->author;?></a><br><br>
+  <a href="#">Fecha: <?=$consulta->date;?></a>
+  <br><br>
+  <a href="<?=base_url();?>"><button class="btn boton1"><span class="glyphicon glyphicon-arrow-left"> </span> Volver al inicio</button></a>
 </div>
 </div>
 </div>
+
 <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="<?=base_url();?>assets/js/bootstrap.js"></script>
 </body>

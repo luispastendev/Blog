@@ -42,15 +42,38 @@ p.date {
 .list-group {
   width: 80% !important;
   margin-left: 10% !important;
-  margin-right: 10% !important; }
+  margin-right: 10% !important;
+  word-wrap: break-word; }
 
 @media (max-width: 768px) {
   div.todo {
     padding: 0px !important; }
     div.todo .contenedor-secundario {
-      display: none !important; }
+      width: 100% !important; }
 
   body {
     background-color: #ffffff !important; } }
+.post {
+  padding: 40px 100px 100px 100px !important; }
+
+.boton1 {
+  border: 1px solid transparent !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  background-color: #3498db !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  margin: 0px auto !important;
+  transition: all 0.3s !important;
+  font-size: 19px !important; }
+  .boton1:hover {
+    color: #3498db !important;
+    background-color: #ffffff !important;
+    border: 1px solid #3498db !important;
+    transition: all 0.3s !important; }
+
+@media (max-width: 768px) {
+  .post {
+    padding: 10px 0px 2px 2px !important; } }
 
 /*# sourceMappingURL=main.css.map */

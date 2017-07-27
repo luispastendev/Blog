@@ -41,10 +41,7 @@
 
 
 <?php 
-$i = 0;
   foreach($consulta->result() as $fila){
-    $i++;
-    if($i<5):
  ?>
 
   <a href="<?=base_url().'Viewpost?id='.$fila->id?>" class="list-group-item">
@@ -56,18 +53,16 @@ $i = 0;
     else:
       echo $fila->texto;
     endif;
-    ?></p>
+    ?></p><br>
    <p class="date">Fecha de publicacion : <?=$fila->date;?></p>
    <p class="date">Autor: <?=$fila->author;?></p>
   </a>
   <?
-    else:
-    break;
-    endif;
+
 }
   ?>
   <br>
-<center><a href="<?=base_url();?>Allposts"><h3>Ver todos los posts</h3></a></center><br>
+<center><a href="<?=base_url();?>"><h3>Ver solo los posts mas recientes</h3></a></center><br>
 </div>
 </div>
 </div>
