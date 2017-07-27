@@ -75,5 +75,20 @@ p.date {
 @media (max-width: 768px) {
   .post {
     padding: 10px 0px 2px 2px !important; } }
+form.login-admin {
+  margin-top: 5% !important;
+  width: 40% !important;
+  background-color: #ffffff !important; }
+  form.login-admin input {
+    height: 36px !important;
+    border-radius: none !important;
+    border: none !important;
+    border-bottom: 1px solid grey !important;
+    width: 80% !important; }
+  form.login-admin .iluminado {
+    border-bottom: 1px solid #00a2ff !important; }
+
+.cms {
+  width: 250px !important; }
 
 /*# sourceMappingURL=main.css.map */

@@ -53,9 +53,11 @@
     else:
       echo $fila->texto;
     endif;
-    ?></p><br>
+    ?>
    <p class="date">Fecha de publicacion : <?=$fila->date;?></p>
    <p class="date">Autor: <?=$fila->author;?></p>
+    </p>
+  
   </a>
   <?
 
