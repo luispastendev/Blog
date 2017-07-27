@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,400,500,700");
+* {
+  font-family: "Raleway", sans-serif, Arial, Alvetica; }
+
+body {
+  background-color: #333333;
+  word-wrap: break-word; }
+
+div.todo {
+  padding: 20px !important;
+  min-height: 620px !important; }
+  div.todo nav {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0px !important; }
+    div.todo nav .container-fluid {
+      border-radius: 0px !important;
+      background-color: #3498db !important; }
+      div.todo nav .container-fluid li.active-propio {
+        background-color: #2980b9 !important; }
+      div.todo nav .container-fluid li.corriente:hover a {
+        text-shadow: 1px 1px 3px #ffffff !important;
+        transition: all 0.3s; }
+    div.todo nav .navbar-brand {
+      font-size: 22px !important;
+      font-weight: 500; }
+    div.todo nav li a {
+      font-size: 17px !important;
+      font-weight: 400;
+      transition: all 0.3s; }
+    div.todo nav a {
+      color: #ffffff !important; }
+  div.todo .contenedor-secundario {
+    background-color: #ffffff !important;
+    min-height: 620px !important;
+    margin-top: -19.6px !important; }
+
+p.date {
+  color: blue !important;
+  cursor: pointer; }
+
+.list-group {
+  width: 80% !important;
+  margin-left: 10% !important;
+  margin-right: 10% !important; }
+
+@media (max-width: 768px) {
+  div.todo {
+    padding: 0px !important; }
+    div.todo .contenedor-secundario {
+      display: none !important; }
+
+  body {
+    background-color: #ffffff !important; } }
+
+/*# sourceMappingURL=main.css.map */
