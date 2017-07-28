@@ -26,13 +26,16 @@
 <nav id="sideNav">
   <ul>
     <li class="active-propio"> <a href="<?=base_url();?>Admin/configurations" title="Admin / Identification Component"><span class="glyphicon glyphicon-cog" aria-hidden="true" data-menu="admin"></span> </a> </li>
-    <li> <a href="#" title="TechPub Component"><span class="glyphicon glyphicon-briefcase" aria-hidden="true" data-menu="techpub"></span> </a> </li>
+    <li> <a href="<?=base_url();?>Admin/bloging" title="TechPub Component"><span class="glyphicon glyphicon-briefcase" aria-hidden="true" data-menu="techpub"></span> </a> </li>
    
     <li> <a href="#" title="Tools Component"><span class="glyphicon glyphicon-wrench" aria-hidden="true" data-menu="tools"></span> </a> </li>
 
     <li> <a href="#" title="Help"><span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-menu="help"></span> </a> </li>
 
     <li> <a href="#" title="User Component"><span class="glyphicon glyphicon-user" aria-hidden="true" data-menu="user"></span> </a> </li>
+
+    <li> <a href="<?=base_url();?>Admin/desconect" title="User Component"><span class="glyphicon glyphicon-off
+" aria-hidden="true" data-menu="user"></span> </a> </li>
   </ul>
 </nav>
 

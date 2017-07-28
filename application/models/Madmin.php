@@ -28,4 +28,10 @@ class Madmin extends CI_model
 						setTimeout ('recargar()', 10);
 					</script>";
 	}
+	public function get_posts(){
+		$this->db->select("*");
+		$this->db->from("posts");
+		return $this->db->get();
+	}
+
 }

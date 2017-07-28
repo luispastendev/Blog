@@ -26,7 +26,18 @@ class Admin extends CI_Controller
 		$this->load->view("admin-panel/config.php",$data);
 
 	}
+	public function bloging(){
+		$posts=$this->madmin->get_posts();
+		$data = array(
+				'posts'=>$posts
+			);
+		$this->load->view('admin-panel/bloging',$data);
+	}
 	public function config_base_of_blog(){
 		$this->madmin->edit_base_name_of_blog($this->input->post('title'));
+	}
+	public function desconect(){
+		session_destroy();
+		redirect(base_url());
 	}
 }
