@@ -2,14 +2,13 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title><?=$title?></title>
+  <title>Panel de Administracion</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
-      <link rel="stylesheet" href="<?=base_url()?>assets/admin/css/style.css">
-
+  <link rel="stylesheet" href="<?=base_url()?>assets/admin/css/style.css">
   
 </head>
 
@@ -26,8 +25,8 @@
 
 <nav id="sideNav">
   <ul>
-    <li > <a href="<?=base_url();?>Admin/configurations" title="Admin / Identification Component"><span class="glyphicon glyphicon-cog" aria-hidden="true" data-menu="admin"></span> </a> </li>
-    <li > <a href="#" title="TechPub Component"><span class="glyphicon glyphicon-briefcase" aria-hidden="true" data-menu="techpub"></span> </a> </li>
+    <li class="active-propio"> <a href="<?=base_url();?>Admin/configurations" title="Admin / Identification Component"><span class="glyphicon glyphicon-cog" aria-hidden="true" data-menu="admin"></span> </a> </li>
+    <li> <a href="#" title="TechPub Component"><span class="glyphicon glyphicon-briefcase" aria-hidden="true" data-menu="techpub"></span> </a> </li>
    
     <li> <a href="#" title="Tools Component"><span class="glyphicon glyphicon-wrench" aria-hidden="true" data-menu="tools"></span> </a> </li>
 
@@ -75,10 +74,12 @@
 
 <main>
   <section>
-    <h2>Bienvenido administrador <strong><?=$administrator->NyA;?></strong></h2>
-
-    <p>Bienvenido, Desde el Administration Panel tendras control de todas las acciones que quieras en cuanto al blog se refiera</p>
-    
+    <h2>Configura las bases de tu blog<strong>...</strong></h2>
+<form method="POST" action="<?=base_url();?>Admin/config_base_of_blog">
+    <p>Nombre del blog:</p>
+    <input type="text" name="title" placeholder="example: Blog lautaro" value="<?=$nameblog->data;?>"><br><br>
+    <button name="submit" type="submit" class="btn boton1">Guardar cambios<strong>...</strong></button>
+    </form>
   </section>
 </main>
 

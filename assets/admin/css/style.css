@@ -53,6 +53,15 @@ header {
   border-bottom: 1px solid #555555;
   margin: 0;
 }
+#sideNav li span
+{
+  color:#ffffff !important;
+}
+#sideNav li.active-propio
+{
+  background: rgba(0, 0, 0, 0.2);
+;
+}
 #sideNav a {
   font-size: 20px;
   padding: 10px;
@@ -274,4 +283,29 @@ footer {
   height: 40px;
   padding: 10px;
   background: #555555;
+}
+.boton1{
+  border: 1px solid transparent !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  background-color: #3498db!important;
+  color: #ffffff !important;
+  font-weight: 700!important;
+  margin: 0px auto !important;
+  transition: all 0.3s !important;
+  font-size: 15px!important;
+ }
+ .boton1:hover{
+  color: #3498db!important;
+  background-color: #ffffff !important;
+  border: 1px solid #3498db!important;
+  transition: all 0.3s !important;
+}
+input{
+  height: 36px !important;
+  border-radius: none !important;
+  border: none !important;
+  border-bottom: 1px solid grey !important;
+  width: 35% !important;
+  background-color: #f9f9f9 !important;
 }
